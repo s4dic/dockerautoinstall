@@ -34,9 +34,11 @@ case $version in
     curl -SL https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
     ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
     chmod +x /usr/bin/docker-compose
+    echo "";echo "";echo "";echo "";
     echo "vérification de la version docker + docker compose installée:"
     docker --version
     docker-compose --version
+    echo "";
     echo "fin de l'installation"
     ;;
   *)
